@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://powerlinelawn.com/sitemap.xml
+
+# Block ad landing page from organic indexing
+Disallow: /landing.html

@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Commercial Property Maintenance | Clemson, Anderson, Easley, Seneca & Greenville | Powerline Maintenance</title>
+  <meta name="description" content="Reliable commercial lawn care and property maintenance for businesses in Clemson, Anderson, Easley, Seneca, and Greenville, SC. Licensed & insured. 500+ properties served. Call (864) 883-8752.">
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="canonical" href="https://powerlinelawn.com/landing-commercial">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Commercial Property Maintenance | Powerline Maintenance">
+  <meta property="og:description" content="Professional commercial lawn care & property maintenance in Clemson, Anderson, Easley, Seneca & Greenville. Licensed & insured. Custom plans for any property.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Google Ads conversion tracking placeholder -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=AW-XXXXXXXXX"></script> -->
+
+  <style>
+    /* Landing page overrides — Nelson-style layout */
+    .lp-hero {
+      padding: 60px 0 80px;
+      background: linear-gradient(135deg, #1a3a1a 0%, #2d8a4e 100%);
+      color: #fff;
+    }
+    .lp-hero__grid {
+      display: grid;
+      grid-template-columns: 1fr 420px;
+      gap: 48px;
+      align-items: start;
+    }
+    .lp-hero__badge {
+      display: inline-block;
+      background: rgba(255,255,255,.15);
+      padding: 6px 18px;
+      border-radius: 50px;
+      font-size: .85rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    .lp-hero h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      font-weight: 900;
+      line-height: 1.15;
+      margin-bottom: 16px;
+    }
+    .lp-hero__sub {
+      font-size: 1.1rem;
+      opacity: .9;
+      margin-bottom: 28px;
+      max-width: 520px;
+    }
+    .lp-hero__trust {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+    .lp-hero__trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: .88rem;
+      opacity: .85;
+    }
+    .lp-hero__form-card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.25);
+      color: #1a1a2e;
+    }
+    .lp-hero__form-card h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      margin-bottom: 4px;
+      text-align: center;
+    }
+    .lp-hero__form-card .form-sub {
+      text-align: center;
+      color: #666;
+      font-size: .88rem;
+      margin-bottom: 20px;
+    }
+    .lp-hero__form-card .form-group { margin-bottom: 14px; }
+    .lp-hero__form-card .form-group label { font-size: .85rem; }
+    .lp-hero__form-card .form-group input,
+    .lp-hero__form-card .form-group select,
+    .lp-hero__form-card .form-group textarea {
+      padding: 10px 14px;
+      font-size: .9rem;
+    }
+
+    /* Stats bar */
+    .lp-stats {
+      background: #1a1a2e;
+      padding: 28px 0;
+    }
+    .lp-stats__grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .lp-stat__icon {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: rgba(45,138,78,.15);
+      color: #2d8a4e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 8px;
+    }
+    .lp-stat__value {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .lp-stat__label {
+      font-size: .82rem;
+      color: rgba(255,255,255,.6);
+      margin-top: 2px;
+    }
+
+    /* Features/benefits */
+    .lp-features {
+      padding: 80px 0;
+      background: #fff;
+    }
+    .lp-features__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+    }
+    .lp-feature-card {
+      background: #f8f9ff;
+      border-radius: 16px;
+      padding: 32px 28px;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .lp-feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 40px rgba(0,0,0,.08);
+    }
+    .lp-feature-card__icon {
+      width: 52px; height: 52px;
+      border-radius: 50%;
+      background: #e8f5ed;
+      color: #2d8a4e;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .lp-feature-card h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .lp-feature-card p {
+      color: #666;
+      font-size: .92rem;
+      line-height: 1.6;
+    }
+
+    /* How it works */
+    .lp-process {
+      padding: 80px 0;
+      background: #f8f9ff;
+    }
+    .lp-process__grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 48px;
+      position: relative;
+    }
+    .lp-process__grid::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: 16.6%;
+      right: 16.6%;
+      height: 3px;
+      background: #ddd;
+    }
+    .lp-step {
+      text-align: center;
+      position: relative;
+    }
+    .lp-step__num {
+      width: 64px; height: 64px;
+      border-radius: 50%;
+      background: #e8913a;
+      color: #fff;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 16px;
+      position: relative;
+      z-index: 1;
+    }
+    .lp-step h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .lp-step p {
+      color: #666;
+      font-size: .9rem;
+      max-width: 260px;
+      margin: 0 auto;
+    }
+
+    /* Orange CTA banner */
+    .lp-cta-orange {
+      padding: 64px 0;
+      background: #e8913a;
+      text-align: center;
+      color: #fff;
+    }
+    .lp-cta-orange h2 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(1.5rem, 3vw, 2rem);
+      font-weight: 800;
+      margin-bottom: 12px;
+    }
+    .lp-cta-orange p {
+      opacity: .9;
+      margin-bottom: 28px;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .lp-cta-orange .btn--white {
+      background: #fff;
+      color: #e8913a;
+      border-color: #fff;
+      padding: 16px 36px;
+      font-size: 1rem;
+    }
+    .lp-cta-orange .btn--white:hover { background: #f5f5f5; }
+    .lp-cta-orange .btn--white-outline {
+      background: transparent;
+      color: #fff;
+      border: 2px solid #fff;
+      padding: 16px 36px;
+      font-size: 1rem;
+      margin-left: 12px;
+    }
+    .lp-cta-orange .btn--white-outline:hover { background: rgba(255,255,255,.15); }
+
+    /* Sticky mobile CTA */
+    .lp-mobile-sticky {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #1a1a2e;
+      padding: 12px 16px;
+      z-index: 999;
+      box-shadow: 0 -4px 20px rgba(0,0,0,.15);
+    }
+    .lp-mobile-sticky__inner {
+      display: flex;
+      gap: 10px;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+    .lp-mobile-sticky .btn {
+      flex: 1;
+      padding: 12px 16px;
+      font-size: .9rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    /* About section grid */
+    .lp-about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .lp-about-grid { grid-template-columns: 1fr; }
+      .lp-hero__grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+      .lp-hero__form-card { max-width: 480px; }
+      .lp-features__grid { grid-template-columns: 1fr; max-width: 420px; margin-left: auto; margin-right: auto; }
+      .lp-process__grid { grid-template-columns: 1fr; max-width: 340px; margin-left: auto; margin-right: auto; }
+      .lp-process__grid::before { display: none; }
+      .lp-stats__grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .lp-hero { padding: 40px 0 48px; }
+      .lp-mobile-sticky { display: block; }
+      body { padding-bottom: 68px; }
+      .lp-cta-orange .btn--white-outline { margin-left: 0; margin-top: 12px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Commercial Property Maintenance",
+    "provider": {
+      "@type": "LandscapingBusiness",
+      "name": "Powerline Maintenance",
+      "telephone": "+18648838752",
+      "areaServed": ["Clemson, SC", "Anderson, SC", "Easley, SC", "Seneca, SC", "Greenville, SC"]
+    },
+    "serviceType": "Commercial Property Maintenance",
+    "areaServed": ["Clemson, SC", "Anderson, SC", "Easley, SC", "Seneca, SC", "Greenville, SC"],
+    "description": "Professional commercial property maintenance and lawn care services for businesses and property managers."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Minimal header — sticky, no nav -->
+  <header style="position:sticky; top:0; z-index:1000; background:#fff; padding:12px 0; border-bottom:1px solid #eee; box-shadow:0 2px 10px rgba(0,0,0,.06);">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center;">
+      <a href="/" class="logo">
+        <span class="logo__power">POWERLINE</span> <span class="logo__line">MAINTENANCE</span>
+      </a>
+      <div style="display:flex; align-items:center; gap:16px;">
+        <div style="display:flex; align-items:center; gap:4px; font-size:.85rem; color:#888;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <strong style="color:#1a1a2e;">5.0</strong> on Google
+        </div>
+        <a href="tel:+18648838752" class="btn btn--primary" style="padding:10px 24px; font-size:.9rem;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:6px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          (864) 883-8752
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO — split layout: content left, form right -->
+  <section class="lp-hero">
+    <div class="container">
+      <div class="lp-hero__grid">
+        <div>
+          <div class="lp-hero__badge">Serving Clemson, Anderson, Easley, Seneca & Greenville</div>
+          <h1>Commercial Property Maintenance<br>You Can Count On</h1>
+          <p class="lp-hero__sub">Keep your business looking its best year-round. Dependable crews, consistent results, and flexible plans built for commercial properties of every size.</p>
+          <a href="#get-quote" class="btn btn--orange btn--lg">Get Your Free Estimate</a>
+          <div class="lp-hero__trust">
+            <div class="lp-hero__trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Licensed & Insured
+            </div>
+            <div class="lp-hero__trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              15+ Years Experience
+            </div>
+            <div class="lp-hero__trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              500+ Properties Served
+            </div>
+            <div class="lp-hero__trust-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              Custom Plans
+            </div>
+          </div>
+        </div>
+
+        <!-- Quote form card -->
+        <div class="lp-hero__form-card" id="get-quote">
+          <h2>Get Your Free Estimate</h2>
+          <p class="form-sub">We respond within 2 hours during business hours.</p>
+          <form class="contact-form" id="landing-form" action="https://formspree.io/f/xdalqeyo" method="POST">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="l-first-name">First Name <span class="required">*</span></label>
+                <input type="text" id="l-first-name" name="first_name" required autocomplete="given-name">
+              </div>
+              <div class="form-group">
+                <label for="l-last-name">Last Name <span class="required">*</span></label>
+                <input type="text" id="l-last-name" name="last_name" required autocomplete="family-name">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="l-phone">Phone <span class="required">*</span></label>
+              <input type="tel" id="l-phone" name="phone" required autocomplete="tel" placeholder="(___) ___-____">
+            </div>
+            <div class="form-group">
+              <label for="l-email">Email</label>
+              <input type="email" id="l-email" name="email" autocomplete="email">
+            </div>
+            <div class="form-group">
+              <label for="l-company">Company Name <span class="required">*</span></label>
+              <input type="text" id="l-company" name="company" required autocomplete="organization">
+            </div>
+            <div class="form-group">
+              <label for="l-property-type">Property Type <span class="required">*</span></label>
+              <select id="l-property-type" name="property_type" required>
+                <option value="" disabled selected>Select property type...</option>
+                <option value="office-retail">Office / Retail</option>
+                <option value="hoa-multifamily">HOA / Multi-Family</option>
+                <option value="restaurant-hospitality">Restaurant / Hospitality</option>
+                <option value="industrial-warehouse">Industrial / Warehouse</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="l-num-properties">Number of Properties</label>
+              <input type="number" id="l-num-properties" name="num_properties" min="1" placeholder="1">
+            </div>
+            <div class="form-group">
+              <label for="l-message">Anything else we should know?</label>
+              <textarea id="l-message" name="message" rows="2" placeholder="e.g. property size, specific services needed, current contract end date..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--full btn--lg">Get My Free Estimate</button>
+            <p style="text-align:center; font-size:.8rem; color:#888; margin-top:10px;">No commitment. No spam. Just a quick, honest quote.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="lp-stats">
+    <div class="container">
+      <div class="lp-stats__grid">
+        <div>
+          <div class="lp-stat__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="lp-stat__value">5.0 Rating</div>
+          <div class="lp-stat__label">on Google Reviews</div>
+        </div>
+        <div>
+          <div class="lp-stat__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <div class="lp-stat__value">Fully Insured</div>
+          <div class="lp-stat__label">Licensed & bonded</div>
+        </div>
+        <div>
+          <div class="lp-stat__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <div class="lp-stat__value">500+ Properties</div>
+          <div class="lp-stat__label">Served across the Upstate</div>
+        </div>
+        <div>
+          <div class="lp-stat__icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+          </div>
+          <div class="lp-stat__value">Owner-Operated</div>
+          <div class="lp-stat__label">On every job</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES / BENEFITS -->
+  <section class="lp-features">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Why Businesses <span class="text-green">Choose Us</span></h2>
+        <p class="section-subtitle">Professional property maintenance that keeps your business looking sharp.</p>
+      </div>
+      <div class="lp-features__grid">
+        <div class="lp-feature-card">
+          <div class="lp-feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Reliable Crews</h3>
+          <p>Trained, uniformed teams that show up on time, every time. Consistent quality you can depend on for your business.</p>
+        </div>
+        <div class="lp-feature-card">
+          <div class="lp-feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3>Multi-Property Management</h3>
+          <p>One point of contact for all your properties. Simplified billing and scheduling across multiple locations.</p>
+        </div>
+        <div class="lp-feature-card">
+          <div class="lp-feature-card__icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <h3>Professional Appearance</h3>
+          <p>First impressions matter. We keep your grounds pristine so your property always reflects well on your business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT — Father & Son -->
+  <section style="padding: 80px 0; background: #1a1a2e; color: #fff;">
+    <div class="container">
+      <div class="lp-about-grid">
+        <div style="border-radius: 16px; overflow: hidden; box-shadow: 0 16px 48px rgba(0,0,0,.3);">
+          <img src="images/jacob-bryce-nelson.jpg" alt="Jacob and Bryce Nelson — father and son, owners of Powerline Maintenance" style="width:100%; height:100%; object-fit:cover; display:block;">
+        </div>
+        <div>
+          <div style="display:inline-block; background:rgba(45,138,78,.2); color:#2d8a4e; padding:6px 16px; border-radius:50px; font-size:.82rem; font-weight:600; margin-bottom:16px;">Family-Owned & Operated</div>
+          <h2 style="font-family:'Montserrat',sans-serif; font-size:clamp(1.6rem,3vw,2.2rem); font-weight:900; line-height:1.2; margin-bottom:16px;">Cutting Yards<br>Since <span style="color:#e8913a;">1998</span></h2>
+          <p style="color:rgba(255,255,255,.8); font-size:1rem; line-height:1.7; margin-bottom:16px;">Powerline Maintenance is run by Jacob and Bryce Nelson — a father and son team who've been mowing lawns and maintaining properties in the Upstate for over 25 years.</p>
+          <p style="color:rgba(255,255,255,.65); font-size:.95rem; line-height:1.7;">When you hire us, you're not getting a faceless company — you're getting a family that takes pride in every property we maintain.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section style="padding: 80px 0; background: linear-gradient(135deg, #eef1f8, #e8eaf6);">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Businesses <span class="text-green">Trust</span> Us</h2>
+      </div>
+      <div class="testimonials__grid" style="max-width:960px; margin:0 auto;">
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-card__quote">&ldquo;We switched to Powerline for our three retail locations and the difference was immediate. The properties look immaculate, and their team is incredibly responsive to any requests.&rdquo;</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">MR</div>
+            <div>
+              <div class="testimonial-card__name">Michael Rodriguez</div>
+              <div class="testimonial-card__role">Business Owner, Anderson</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-card__stars" aria-label="5 out of 5 stars">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="#f5a623"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <blockquote class="testimonial-card__quote">&ldquo;Managing multiple properties is challenging, but Powerline Maintenance makes the landscaping part effortless. Their team adapts to our needs and exceeds expectations every time.&rdquo;</blockquote>
+          <div class="testimonial-card__author">
+            <div class="testimonial-card__avatar">LT</div>
+            <div>
+              <div class="testimonial-card__name">Lisa Thompson</div>
+              <div class="testimonial-card__role">Property Manager, Easley</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section class="landing-pricing">
+    <div class="container">
+      <h2>Commercial <span class="text-green">Plans</span></h2>
+      <p>Tailored maintenance programs for properties of every size. All plans include mowing, edging, blowing, and seasonal cleanup.</p>
+      <div class="pricing-cards">
+        <div class="pricing-card">
+          <h3>Single Property</h3>
+          <div class="pricing-card__price">Get Quote</div>
+          <div class="pricing-card__freq">per property</div>
+          <ul>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Weekly maintenance</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Mowing, edging & blowing</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dedicated crew</li>
+          </ul>
+          <a href="#get-quote" class="btn btn--outline" style="width:100%;">Get Started</a>
+        </div>
+        <div class="pricing-card pricing-card--featured">
+          <h3>Multi-Property</h3>
+          <div class="pricing-card__price">Get Quote</div>
+          <div class="pricing-card__freq">per property</div>
+          <ul>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Volume discount</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Consolidated billing</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Priority scheduling</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Dedicated account manager</li>
+          </ul>
+          <a href="#get-quote" class="btn btn--primary" style="width:100%;">Get Started</a>
+        </div>
+        <div class="pricing-card">
+          <h3>Custom Program</h3>
+          <div class="pricing-card__price">Get Quote</div>
+          <div class="pricing-card__freq">tailored plan</div>
+          <ul>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Fully customized scope</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Seasonal services included</li>
+            <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg> Flexible contract terms</li>
+          </ul>
+          <a href="#get-quote" class="btn btn--outline" style="width:100%;">Get Started</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section class="lp-process">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">How It <span class="text-green">Works</span></h2>
+        <p class="section-subtitle">Getting started is easy. Three simple steps to a professionally maintained property.</p>
+      </div>
+      <div class="lp-process__grid">
+        <div class="lp-step">
+          <div class="lp-step__num">1</div>
+          <h3>Request a Quote</h3>
+          <p>Fill out the form or give us a call. We'll assess your property and provide a detailed quote.</p>
+        </div>
+        <div class="lp-step">
+          <div class="lp-step__num">2</div>
+          <h3>Choose Your Plan</h3>
+          <p>Single property, multi-property, or fully custom — we'll build a program that fits your needs.</p>
+        </div>
+        <div class="lp-step">
+          <div class="lp-step__num">3</div>
+          <h3>Look Professional</h3>
+          <p>We handle the grounds so you can focus on your business. Consistent results, every visit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORANGE CTA -->
+  <section class="lp-cta-orange">
+    <div class="container">
+      <h2>Don't Let Your Property Fall Behind</h2>
+      <p>Professional commercial maintenance starting this week. Get your free estimate today.</p>
+      <div>
+        <a href="#get-quote" class="btn btn--white">Get Free Estimate</a>
+        <a href="tel:+18648838752" class="btn btn--white-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-right:8px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          Call (864) 883-8752
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Minimal footer -->
+  <footer style="background:#1a1a2e; color:#999; padding:24px 0; text-align:center; font-size:.85rem;">
+    <div class="container">
+      <p>&copy; 2025 Powerline Maintenance. All rights reserved. | <a href="/" style="color:#2d8a4e;">Visit Main Site</a> | <a href="/service-areas.html" style="color:#999;">Service Areas</a> | <a href="/privacy-policy/" style="color:#999;">Privacy Policy</a></p>
+    </div>
+  </footer>
+
+  <!-- Sticky mobile CTA bar -->
+  <div class="lp-mobile-sticky">
+    <div class="lp-mobile-sticky__inner">
+      <a href="tel:+18648838752" class="btn btn--primary">Call Now</a>
+      <a href="#get-quote" class="btn btn--orange">Get Estimate</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
