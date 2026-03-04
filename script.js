@@ -94,31 +94,71 @@ document.addEventListener('DOMContentLoaded', () => {
     reveals.forEach(el => revealObserver.observe(el));
   }
 
-  // --- Contact form handling ---
+  // --- Contact form handling (submits to Formspree) ---
   const form = document.getElementById('contact-form');
-  if (form) {
+  if (form && form.action.includes('formspree.io')) {
     form.addEventListener('submit', e => {
       e.preventDefault();
-      // In production, replace with actual form submission (e.g. Formspree, Netlify Forms, etc.)
-      const formEl = form;
-      const success = document.querySelector('.form-success');
-      if (success) {
-        formEl.style.display = 'none';
-        success.classList.add('show');
-      } else {
-        alert('Thank you! We\'ll be in touch within 24 hours.');
-        formEl.reset();
-      }
+      const data = new FormData(form);
+      const btn = form.querySelector('button[type="submit"]');
+      const origText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(res => {
+        if (res.ok) {
+          form.reset();
+          const success = document.querySelector('.form-success');
+          if (success) {
+            form.style.display = 'none';
+            success.classList.add('show');
+          } else {
+            form.innerHTML = '<div style="text-align:center;padding:40px 0;"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2d8a4e" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><h3 style="font-family:Montserrat,sans-serif;font-size:1.3rem;margin:16px 0 8px;">Thank You!</h3><p style="color:#666;">We\'ll be in touch within 24 hours.</p></div>';
+          }
+        } else {
+          btn.textContent = origText;
+          btn.disabled = false;
+          alert('Something went wrong. Please call us at (864) 883-8752.');
+        }
+      }).catch(() => {
+        btn.textContent = origText;
+        btn.disabled = false;
+        alert('Something went wrong. Please call us at (864) 883-8752.');
+      });
     });
   }
 
-  // --- Landing page form ---
+  // --- Landing page form (submits to Formspree) ---
   const landingForm = document.getElementById('landing-form');
-  if (landingForm) {
+  if (landingForm && landingForm.action.includes('formspree.io')) {
     landingForm.addEventListener('submit', e => {
       e.preventDefault();
-      alert('Thank you! We\'ll call you within 2 hours to schedule your service.');
-      landingForm.reset();
+      const data = new FormData(landingForm);
+      const btn = landingForm.querySelector('button[type="submit"]');
+      const origText = btn.textContent;
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      fetch(landingForm.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(res => {
+        if (res.ok) {
+          landingForm.reset();
+          landingForm.innerHTML = '<div style="text-align:center;padding:40px 0;"><svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#2d8a4e" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><h3 style="font-family:Montserrat,sans-serif;font-size:1.3rem;margin:16px 0 8px;">Thank You!</h3><p style="color:#666;">We\'ll call you within 2 hours to schedule your service.</p></div>';
+        } else {
+          btn.textContent = origText;
+          btn.disabled = false;
+          alert('Something went wrong. Please call us at (864) 883-8752.');
+        }
+      }).catch(() => {
+        btn.textContent = origText;
+        btn.disabled = false;
+        alert('Something went wrong. Please call us at (864) 883-8752.');
+      });
     });
   }
 });

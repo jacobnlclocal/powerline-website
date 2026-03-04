@@ -1,0 +1,10 @@
+[build]
+  publish = "."
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "SAMEORIGIN"
+
+# Pretty URLs: /about serves about.html automatically
+# Netlify enables this by default for .html files
